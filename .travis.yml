@@ -7,3 +7,6 @@ before_install:
 
 script:
   - docker run hyoungdong/docker-react npm run test -- --coverage
+  
+after_success:
+    - echo "Test success"
