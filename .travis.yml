@@ -8,9 +8,6 @@ before_install:
 script:
   - docker run -e CI=true hyoungdong/docker-react npm run test -- --coverage
 
-after_success:
-    - echo "Test success"
-
 deploy:
   provider: elasticbeanstalk
   region: "ap-northeast-2"
